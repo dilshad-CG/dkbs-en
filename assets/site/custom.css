@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Custom polish layer (Click Genius) — hero slider, alignment, mobile
+   ========================================================================== */
+html, body { overflow-x: hidden !important; }
+img { max-width: 100%; }
+
+/* ===== HERO SLIDER ===== */
+.mosaic-slider__list{
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 560px !important;
+}
+.mosaic-slider__item__outer{
+  position: absolute !important;
+  top: 0 !important; left: 0 !important;
+  width: 100% !important; height: 100% !important;
+  opacity: 0;
+  transition: opacity .9s ease;
+  pointer-events: none;
+}
+.mosaic-slider__item__outer.cg-active{ opacity: 1; pointer-events: auto; z-index: 2; }
+.mosaic-slider__item{ height: 100% !important; }
+.mosaic-slider__item .imageFit{ position: absolute !important; top:0;left:0;right:0;bottom:0 !important; }
+.mosaic-slider__item .imageFit__img{
+  width: 100% !important; height: 100% !important; object-fit: cover !important;
+}
+/* readability scrim */
+.mosaic-slider__item .imageFit__overlay{
+  background: linear-gradient(90deg, rgba(24,12,28,.78) 0%, rgba(24,12,28,.45) 42%, rgba(24,12,28,0) 74%) !important;
+  opacity: 1 !important;
+}
+/* caption: uniform, responsive, left-aligned, vertically centred */
+.mosaic-slider__item .container{
+  position: absolute !important; top:0;left:0;right:0;bottom:0 !important;
+  display: flex !important; align-items: center !important;
+  max-width: 1180px; margin: 0 auto !important;
+  padding: 0 clamp(20px, 5vw, 60px) !important;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.mosaic-slider__item .container > .div{
+  position: relative !important;
+  width: 100% !important; max-width: 560px !important;
+  text-align: left !important;
+}
+.mosaic-slider__item .container .text,
+.mosaic-slider__item .container .text *{
+  width: auto !important; max-width: 100% !important;
+  left: auto !important; right:auto !important; transform: none !important;
+  text-align: left !important;
+  white-space: normal !important;
+  color: #fff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.55) !important;
+}
+.mosaic-slider__item .container .text{ margin: 0 0 6px !important; }
+/* arrows above slides */
+.mosaic-slider__arrows_wrapper, .mosaic-slider__arrows,
+.mosaic-slider__arrow--prev, .mosaic-slider__arrow--next{ z-index: 6 !important; }
+/* dots */
+.cg-dots{
+  position: absolute; left: 0; right: 0; bottom: 16px;
+  display: flex; justify-content: center; gap: 9px; z-index: 7;
+}
+.cg-dot{
+  width: 11px; height: 11px; border-radius: 50%; border: 0; cursor: pointer;
+  background: rgba(255,255,255,.5); padding: 0; transition: all .25s;
+}
+.cg-dot.cg-active{ background: #fff; transform: scale(1.25); }
+
+@media (max-width: 992px){
+  .mosaic-slider__list{ height: 440px !important; }
+  .mosaic-slider__item .container .text{ font-size: 19px !important; }
+}
+@media (max-width: 620px){
+  .mosaic-slider__list{ height: 360px !important; }
+  .mosaic-slider__item .imageFit__overlay{
+    background: linear-gradient(180deg, rgba(24,12,28,.25) 0%, rgba(24,12,28,.75) 100%) !important;
+  }
+  .mosaic-slider__item .container{ padding: 0 20px 34px !important; align-items: flex-end !important; }
+  .mosaic-slider__item .container > .div{ max-width: 100% !important; }
+  .mosaic-slider__item .container .text{ font-size: 15px !important; }
+  .cg-dots{ bottom: 10px; }
+}
+
+/* ===== GENERAL ALIGNMENT / MOBILE SAFETY ===== */
+/* keep long builder text blocks from overflowing small screens */
+@media (max-width: 760px){
+  .container .text[style*="width"], .mosaic .text{ max-width: 100% !important; }
+  /* horizontal scroll for wide spec/parts tables instead of overflow */
+  .mosaic table, .content table, table.table{ display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100% !important; }
+}
+
+/* ===== HERO SLIDER — refinements ===== */
+.mosaic-slider{ overflow: hidden !important; }
+.mosaic-slider__list{ overflow: hidden !important; }
+/* hide the builder zoom/lightbox icon on the hero */
+.mosaic-slider__item .imageFit__zoom{ display: none !important; }
+/* linearise & constrain any nested caption elements (kills fixed desktop coords) */
+.mosaic-slider__item .container .text,
+.mosaic-slider__item .container .text > *,
+.mosaic-slider__item .container .div > *{
+  position: static !important;
+  float: none !important;
+  width: auto !important;
+  max-width: 100% !important;
+  left: auto !important; right: auto !important; top: auto !important;
+  transform: none !important;
+}
+/* first (headline) caption line a touch bigger for hierarchy */
+.mosaic-slider__item .container .div > .text:first-of-type{
+  font-weight: 700 !important;
+  font-size: clamp(20px, 2.4vw, 30px) !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 992px){
+  .mosaic-slider__item .container .text,
+  .mosaic-slider__item .container .text *{ font-size: 17px !important; line-height: 1.34 !important; }
+  .mosaic-slider__item .container .div > .text:first-of-type,
+  .mosaic-slider__item .container .div > .text:first-of-type *{ font-size: 22px !important; }
+}
+@media (max-width: 620px){
+  .mosaic-slider__list{ height: 340px !important; }
+  .mosaic-slider__item .container{ align-items: center !important; padding: 0 20px !important; }
+  .mosaic-slider__item .container .text,
+  .mosaic-slider__item .container .text *{ font-size: 13.5px !important; line-height: 1.32 !important; }
+  .mosaic-slider__item .container .div > .text:first-of-type,
+  .mosaic-slider__item .container .div > .text:first-of-type *{ font-size: 17px !important; }
+  .mosaic-slider__item .container > .div{ max-height: 300px; overflow: hidden; }
+}
+
+/* ===== HERO SLIDER — force legible caption colour ===== */
+.mosaic-slider__item .container .container,
+.mosaic-slider__item .container .div,
+.mosaic-slider__item .container .text,
+.mosaic-slider__item .container .text *,
+.mosaic-slider__item .container .div *:not(.link-universal):not([class*="button"]):not([class*="btn"]){
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.6) !important;
+}
+/* stronger scrim on small screens where captions sit over busy imagery */
+@media (max-width: 620px){
+  .mosaic-slider__item .imageFit__overlay{ background: rgba(18,9,22,.60) !important; }
+}
+
+/* ===== HERO SLIDER — kill decorative purple text outline ===== */
+.mosaic-slider__item .container,
+.mosaic-slider__item .container *{
+  -webkit-text-stroke: 0 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.mosaic-slider__item .container .link-universal,
+.mosaic-slider__item .container .link-universal *{
+  -webkit-text-fill-color: initial !important;
+}
