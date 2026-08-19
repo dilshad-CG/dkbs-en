@@ -1,0 +1,101 @@
+/* Google fonts */
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-t.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-t.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-t.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-t.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-t.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-t.svg#roboto") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-t-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-t-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-t-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-t-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-t-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-t-i.svg#roboto") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-l.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-l.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-l.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-l.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-l.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-l.svg#roboto") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-l-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-l-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-l-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-l-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-l-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-l-i.svg#roboto") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-r.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-r.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-r.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-r.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-r.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-r.svg#roboto") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-i.svg#roboto") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-m.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-m.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-m.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-m.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-m.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-m.svg#roboto") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-m-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-m-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-m-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-m-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-m-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-m-i.svg#roboto") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-b.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-b.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-b.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-b.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-b.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-b.svg#roboto") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-b-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-b-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-b-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-b-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-b-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-b-i.svg#roboto") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-bl.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-bl.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-bl.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-bl.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-bl.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-bl.svg#roboto") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/dkbs-en/g/fonts/roboto/roboto-bl-i.eot");
+  src: url("/dkbs-en/g/fonts/roboto/roboto-bl-i.eot?#iefix") format("embedded-opentype"), url("/dkbs-en/g/fonts/roboto/roboto-bl-i.woff2") format("woff2"), url("/dkbs-en/g/fonts/roboto/roboto-bl-i.woff") format("woff"), url("/dkbs-en/g/fonts/roboto/roboto-bl-i.ttf") format("truetype"), url("/dkbs-en/g/fonts/roboto/roboto-bl-i.svg#roboto") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+/* \Roboto */
+/* End of Google fonts */
+/*** Start css of #_lp_block_17004202[data-block-layout='339306'] .lpc-elements-text-3__text ***/
+
+#_lp_block_17004202[data-block-layout='339306'] .lpc-elements-text-3__text {
+	color: rgba(0,0,0,1);
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 166%;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+}
+
+/*** End css of #_lp_block_17004202[data-block-layout='339306'] .lpc-elements-text-3__text ***/
